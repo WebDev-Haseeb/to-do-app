@@ -123,3 +123,11 @@ body::before {
     cursor: pointer;
     color: #a237c9;
 }
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    
+}
