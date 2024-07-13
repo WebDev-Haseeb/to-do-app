@@ -4,20 +4,35 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 body {
-    height: 100vh;
     background: url("./images/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Poppins", sans-serif;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
 }
 
 .container {
+    margin: 3rem 0;
     background-color: white;
     width: 400px;
     height: auto;
@@ -28,7 +43,7 @@ body {
 
 .container h1 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     color: #333;
     font-size: 25px;
@@ -71,7 +86,7 @@ body {
 }
 
 #tasks {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding-right: 1rem;
 }
 
