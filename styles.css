@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url("./images/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.container h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #333;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+
+.container img {
+    height: 25px;
+    margin-left: 10px;
+}
+
+.addTask {
+    background-color: #efecec;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.addTask input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 12px 20px;
+}
+
+.addTask button {
+    width: 30%;
+    background-color: #a237c9;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.addTask button:hover {
+    background-color: #bb00ff;
+}
+
+#tasks {
+    margin-top: 1rem;
+    padding-right: 1rem;
+}
+
+.task {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    line-height: 1;
+}
+
+.task img {
+    cursor: pointer;
+    width: 18px;
+}
+
+.task img:hover {
+    filter: brightness(0.8);
+}
+
+.task p {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.lined {
+    text-decoration: line-through;
+    color: #a237c9;
+}
+
+.task span {
+    margin-left: auto;
+    cursor: pointer;
+    color: #a237c9;
+}
